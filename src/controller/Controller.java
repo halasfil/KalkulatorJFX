@@ -5,33 +5,35 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import javax.script.*;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class Controller {
-
-    @FXML
-    private Button one;
-
-    @FXML
-    private Button two;
-
-    @FXML
-    private Button tree;
 
     @FXML
     private Button four;
 
     @FXML
-    private Button five;
+    private Button equals;
 
     @FXML
-    private Button six;
+    private Button add;
+
+    @FXML
+    private Button openBracket;
+
+    @FXML
+    private Button closeBracket;
+
+    @FXML
+    private Button cofnij;
+
+    @FXML
+    private Button clearAll;
 
     @FXML
     private Button seven;
-
-    @FXML
-    private Button eight;
 
     @FXML
     private Button nine;
@@ -40,13 +42,25 @@ public class Controller {
     private Button zero;
 
     @FXML
+    private Button one;
+
+    @FXML
+    private Button five;
+
+    @FXML
+    private Button two;
+
+    @FXML
+    private Button three;
+
+    @FXML
+    private Button eight;
+
+    @FXML
+    private Button six;
+
+    @FXML
     private Button coma;
-
-    @FXML
-    private Button clearAll;
-
-    @FXML
-    private Button add;
 
     @FXML
     private Button substract;
@@ -58,22 +72,10 @@ public class Controller {
     private Button divide;
 
     @FXML
-    private Button equals;
-
-    @FXML
-    private Button cofnij;
-
-    @FXML
-    private Button openBracket;
-
-    @FXML
-    private Button closeBracket;
+    private TextField textEquation;
 
     @FXML
     private TextField textResault;
-
-    @FXML
-    private TextField textEquation;
 
     @FXML
     void buttonAction(ActionEvent event) throws ScriptException {
@@ -82,7 +84,7 @@ public class Controller {
             textEquation.setText(textEquation.getText() + "1");
         } else if (event.getSource() == two) {
             textEquation.setText(textEquation.getText() + "2");
-        } else if (event.getSource() == tree) {
+        } else if (event.getSource() == three) {
             textEquation.setText(textEquation.getText() + "3");
         } else if (event.getSource() == four) {
             textEquation.setText(textEquation.getText() + "4");
