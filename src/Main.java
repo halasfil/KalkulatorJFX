@@ -13,6 +13,7 @@ public class Main extends Application {
         primaryStage.setTitle("KalkulatorFX");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+        primaryStage.setResizable(false);
     }
 
 
